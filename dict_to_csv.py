@@ -14,7 +14,7 @@ import sys
 import os.path
 
 
-def dict_to_csv(my_dataset, output_file = 'dict.csv', overwrite = False):
+def dict_to_csv(my_dataset, output_file = 'data/dict.csv', overwrite = False):
 	# convert the enron data from dict format to csv format.
 	if not overwrite and os.path.isfile(output_file) :
 		return
