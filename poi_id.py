@@ -22,7 +22,7 @@ features_list = ['poi','salary', 'total_payments', 'long_term_incentive', 'expen
 
 
 ### Load the dictionary containing the dataset
-with open("final_project_dataset.pkl", "r") as data_file:
+with open("data/enron_dataset.pkl", "r") as data_file:
     data_dict = pickle.load(data_file)
 
 ### Task 2: Remove outliers
@@ -32,7 +32,7 @@ my_dataset = data_dict
 my_dataset.pop('TOTAL')
 ############################################
 # convert the enron data from dict format to csv file.
-dict_to_csv(my_dataset, output_file='enron.csv' ,overwrite = True)
+dict_to_csv(my_dataset, output_file='data/enron.csv' ,overwrite = True)
 ####################################################
 ### Task 3: Create the  new four features feature(s) [ read the report enron.ipynb for explaination]
 # first create the two ratio features out of the total messages of the person
@@ -101,7 +101,7 @@ features_train, features_test, labels_train, labels_test = \
 #  			- algorithm = [ 'DT', 'svc', 'BDT', 'BSVC', 'RandF' ]
 #  			- CV = [ True, False ] # whether to use GridSearchCV or not
 #  			- labels : must be enterd if CV == 1
-clf = GetClf('RandF',1, labels)
+clf = GetClf('DT',1, labels)
 clf.fit(features, labels)
 ########################################################################
 # Evaluation
@@ -137,7 +137,7 @@ except :
 	pass
 
 # uncomment to run the test function from tester.py
-#test_classifier(clf, my_dataset, features_list, 1000)
+test_classifier(clf, my_dataset, features_list, 100)
 
 #########################################
 ### Task 6: Dump your classifier, dataset, and features_list so anyone can
