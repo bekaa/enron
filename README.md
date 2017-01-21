@@ -1,7 +1,7 @@
 # enron
 Predicting persons of interest in enron company using supervised Machine learning algorithms.  
 This project is a part of udacity data-analysis Nanodegree.    
-Read the report at https://anaconda.org/bekaa/enron/notebook or the file enron.ipynb .   
+Read the report at https://anaconda.org/bekaa/enron/notebook or the file __[/master/enron-report.ipynb](https://github.com/bekaa/enron/blob/master/enron_report.ipynb)__ .   
 The main script is poi_id.py which does all the magic.    
 The other scripts : 
 * dict_to_csv.py : covert a dictionary to a csv file format.
