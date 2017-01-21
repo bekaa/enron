@@ -101,7 +101,7 @@ features_train, features_test, labels_train, labels_test = \
 #  			- algorithm = [ 'DT', 'svc', 'BDT', 'BSVC', 'RandF' ]
 #  			- CV = [ True, False ] # whether to use GridSearchCV or not
 #  			- labels : must be enterd if CV == 1
-clf = GetClf('DT',1, labels)
+clf = GetClf('DT',0, labels)
 clf.fit(features, labels)
 ########################################################################
 # Evaluation
