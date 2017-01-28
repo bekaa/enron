@@ -11752,9 +11752,9 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="contents-:">contents :<a class="anchor-link" href="#contents-:">&#182;</a></h2><ol>
-<li><a href="#Introduction">Introduction.</a></li>
-<li><a href="#Data-used">Data used.</a></li>
-<li><a href="#Exploring-data-and-handling-outliers-and-missing-values">Exploring data and handling outliers and missing values.</a></li>
+<li><a href="#Introduction">Introduction</a></li>
+<li><a href="#Data-used">Data used</a></li>
+<li><a href="#Exploring-data-and-handling-outliers-and-missing-values">Exploring data and handling outliers and missing values</a></li>
 <li><a href="#Features">Features</a> :<ol>
 <li><a href="#Creation">Creation</a></li>
 <li><a href="#Selection">Selection</a></li>
@@ -11776,6 +11776,7 @@ div#notebook {
 <li><a href="#Validation">Validation</a></li>
 <li><a href="#Evaluation">Evaluation</a></li>
 <li><a href="#Final-results">Final results</a></li>
+<li><a href="#Resources">Resources</a> </li>
 </ol>
 
 </div>
@@ -11834,7 +11835,7 @@ Thanks to udacity instructors in the data-analysis Nanodegree program, who made 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
@@ -11866,7 +11867,7 @@ The following graph shows salary and bonus values.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">ggplot</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;salary&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;bonus&#39;</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;poi&#39;</span><span class="p">)</span>\
@@ -12236,11 +12237,11 @@ AAAAYDjCOwAAAAAAhiO8AwAAAABguP8DnjVmSul55PcAAAAASUVORK5CYII=
 
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;ggplot: (8766657643621)&gt;</pre>
+<pre>&lt;ggplot: (8774194995369)&gt;</pre>
 </div>
 
 </div>
@@ -12261,7 +12262,7 @@ AAAAYDjCOwAAAAAAhiO8AwAAAABguP8DnjVmSul55PcAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[168]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">enron</span><span class="p">[</span><span class="s1">&#39;salary&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">argmax</span><span class="p">()</span>
@@ -12275,7 +12276,7 @@ AAAAYDjCOwAAAAAAhiO8AwAAAABguP8DnjVmSul55PcAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[168]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -12300,7 +12301,7 @@ AAAAYDjCOwAAAAAAhiO8AwAAAABguP8DnjVmSul55PcAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">enron</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;TOTAL&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
@@ -12797,11 +12798,11 @@ fEuBc+SqAAAAAElFTkSuQmCC
 
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[2]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;ggplot: (8766658247933)&gt;</pre>
+<pre>&lt;ggplot: (8774194830297)&gt;</pre>
 </div>
 
 </div>
@@ -12822,7 +12823,7 @@ fEuBc+SqAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[176]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">enron</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span> <span class="n">enron</span><span class="p">[</span><span class="s1">&#39;salary&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">600000</span> <span class="p">][[</span><span class="s1">&#39;poi&#39;</span><span class="p">,</span><span class="s1">&#39;salary&#39;</span><span class="p">,</span><span class="s1">&#39;bonus&#39;</span><span class="p">]]</span>
@@ -12836,7 +12837,7 @@ fEuBc+SqAAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[176]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -13376,8 +13377,9 @@ First of all we need to choose an algorithm to go with.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Tuning-the-Algorithm-:">Tuning the Algorithm :<a class="anchor-link" href="#Tuning-the-Algorithm-:">&#182;</a></h4><p>Each learning algorithm have some parameters that have to be tuned in order to get a better results.<br>
-Tuning can be done by try many numbers and find the best parameters, luckly there is a function called GridSearchCV from sklearn.model_selection, which do that search for us, for more information about it visit this <a href="http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html">link</a></p>
+<h4 id="Tuning-the-Algorithm-:">Tuning the Algorithm :<a class="anchor-link" href="#Tuning-the-Algorithm-:">&#182;</a></h4><p>Each learning algorithm have some parameters that have to be tuned in order to get a better results.
+Essentially the ultimate goal of machine learning is to make a machine system that can automatically build models from data without requiring tedious and time consuming human involvement. As you recognize, one of the difficulties is that learning algorithms (eg. decision trees, random forests, clustering techniques, etc.) require you to set parameters before you use the models (or at least to set constraints on those parameters). How you set those parameters can depend on a whole host of factors. That said, your goal, is usually to set those parameters to so optimal values that enable you to complete a learning task in the best way possible. Thus, tuning an algorithm or machine learning technique, can be simply thought of as process which one goes through in which they optimize the parameters that impact the model in order to enable the algorithm to perform the best (once, of course you have defined what "best" actual is).</p>
+<p>Tuning can be done by try many numbers and find the best parameters, luckly there is a function called GridSearchCV from sklearn.model_selection, which do that search for us, for more information about it visit this <a href="http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html">link</a></p>
 <hr>
 <p>Now the following table is the new accuracy results after tuning the algorithms, and the best parameters for them.</p>
 <table>
@@ -13446,8 +13448,8 @@ Evaluation metrics are some variables each of them describes one side of the pre
 We encountered one of them earlier, the accuracy, the accuracy computes how right our predictions are, so higher accuracy means higher number of true predictions.<br>
 But there are still other metrics, I'll explain some of them.</p>
 <ul>
-<li>Precision : it is the ratio of a number of POIs you can correctly predict to a number all POIs.   </li>
-<li>Recall : it is the ratio of a number of POIs you can correctly predict to a number of all correct POIs.   </li>
+<li>Precision is about being precise. In common English, being precise means: if you give an answer, the answer will very likely be correct. So even if you answered only one question, and you answered this question correctly, you are 100% precise.</li>
+<li>Recall (as opposed to precision) is not so much about answering questions correctly but more about answering all questions that have answer "true" with the answer "true". So if we simply always answer "true", we have 100% recall. In order to compute both precision and recall we need to have a notion of "true" answers and "false" answers.   </li>
 <li>F1 score : The F1 Score is the 2<em>((precision</em>recall)/(precision+recall)). Put another way, the F1 score conveys the balance between the precision and the recall.  </li>
 </ul>
 <hr>
@@ -13523,6 +13525,23 @@ But there are still other metrics, I'll explain some of them.</p>
 </tr>
 </tbody>
 </table>
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Resources">Resources<a class="anchor-link" href="#Resources">&#182;</a></h3><ol>
+<li><a href="http://stackoverflow.com/questions/22903267/what-is-tuning-in-machine-learning">Stack-overflow: what is tuning in machine learning.</a></li>
+<li><a href="http://elkingarcia.github.io/Papers/MLDM07.pdf">Paper on Boosting Support Vector Machines by Elkin García, Fernando Lozano.</a></li>
+<li><a href="http://scikit-learn.org">Scikit-learn (machine learning tools for python).</a></li>
+<li><a href="https://www.cs.cmu.edu/~./enron/">List of public enron emails.</a></li>
+<li><a href="https://www.quora.com/What-is-the-best-way-to-understand-the-terms-precision-and-recall">Quora: explaining precision and recall</a></li>
+</ol>
 <hr>
 
 </div>
