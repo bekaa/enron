@@ -8,7 +8,7 @@ Implementation for the following algorithms :
 	- Adaboost with svm             >> BSVC()
 	- Random Forest                 >> RandF()
 
-* To use this file, call the main fucntion GetClf():
+* To use this file, call the main fucntion get_classifier():
 
   - parameters :
   			- algorithm = [ 'DT', 'svc', 'BDT', 'BSVC', 'RandF' ]
@@ -34,7 +34,7 @@ from sklearn.model_selection import  StratifiedShuffleSplit
 # -------- #
 # FUNCTION #
 ############
-def GetClf(algorithm = 'DT', CV = False, labels = None):
+def get_classifier(algorithm = 'DT', CV = False, labels = None):
 	#clf = DecisionTree(features_train, labels_train)
 	if algorithm == 'DT':
 		return DecisionTree(CV,labels)

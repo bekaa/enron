@@ -11,7 +11,7 @@ import pandas as pd
 from feature_format import featureFormat, targetFeatureSplit
 from tester import dump_classifier_and_data, test_classifier
 from dict_to_csv import dict_to_csv
-from algorithm import GetClf
+from algorithm import get_classifier
 
 print "\n###############START##################"
 ### Task 1: Select what features you'll use.
@@ -24,15 +24,15 @@ features_list = ['poi','salary', 'total_payments', 'long_term_incentive', 'expen
 ### Load the dictionary containing the dataset
 with open("data/enron_dataset.pkl", "r") as data_file:
     data_dict = pickle.load(data_file)
-
-### Task 2: Remove outliers
 #########################################################################################
 ### Store to my_dataset for easy export below.
 my_dataset = data_dict
-my_dataset.pop('TOTAL')
 ############################################
 # convert the enron data from dict format to csv file.
 dict_to_csv(my_dataset, output_file='data/enron.csv' ,overwrite = True)
+#######################################################
+### Task 2: Remove outliers
+my_dataset.pop('TOTAL')
 ####################################################
 ### Task 3: Create the  new four features feature(s) [ read the report enron.ipynb for explaination]
 # first create the two ratio features out of the total messages of the person
@@ -101,7 +101,7 @@ features_train, features_test, labels_train, labels_test = \
 #  			- algorithm = [ 'DT', 'svc', 'BDT', 'BSVC', 'RandF' ]
 #  			- CV = [ True, False ] # whether to use GridSearchCV or not
 #  			- labels : must be enterd if CV == 1
-clf = GetClf('DT',0, labels)
+clf = get_classifier('DT',0, labels)
 clf.fit(features, labels)
 ########################################################################
 # Evaluation
